@@ -1,0 +1,290 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+body, html {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background: linear-gradient(135deg, #1e1e1e, #2b2b2b);
+    background-size: 200% 200%;
+    animation: backgroundShift 15s ease infinite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+/* Animated Background */
+@keyframes backgroundShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+  
+/* Header Section */
+header {
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+}
+  
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+  
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid #ffd700;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+  
+.profile-pic:hover {
+    transform: scale(1.05);
+}
+
+.social-icon {
+    text-decoration: none;
+    font-size: 36px;
+    margin-left: 8px;
+}
+
+#linkedin {
+    color:#0a66c2;
+}
+
+#instagram {
+    color: #E1306C;
+} 
+  
+header h1 {
+    font-size: 2.5rem;
+}
+  
+header p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+  
+.cta-btn {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    color: #333;
+    background: #ffd700;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+  
+.cta-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
+}
+  
+/* Content Section */
+.content-section {
+    width: 90%;
+    max-width: 800px;
+    padding: 2rem;
+    margin: 2rem 0;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    animation: fadeIn 1.5s ease;
+}
+  
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+  
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ffd700;
+}
+  
+/* Skills Section */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+  
+.skills-list div {
+    background: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+}
+  
+.skills-list div:hover {
+    transform: scale(1.1);
+}
+  
+/* Portfolio / Case Studies */
+.case-studies {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+  
+.case {
+    background: #222;
+    padding: 1rem;
+    border-left: 4px solid #ffd700;
+    transition: transform 0.3s ease;
+}
+  
+.case:hover {
+    transform: scale(1.05);
+}
+  
+/* Tools & Certifications */
+#tools ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+  
+#tools li {
+    background: #ffd700;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: #1e1e1e;
+}
+  
+/* Testimonials */
+#testimonials p {
+    font-style: italic;
+    text-align: center;
+    color: #b3b3b3;
+}
+  
+/* Contact */
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+  
+#contact input, #contact textarea, #contact button {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+  
+#contact button {
+    background: #ffd700;
+    color: #333;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+  
+#contact button:hover {
+    background: #333;
+    color: #ffd700;
+    transform: scale(1.05);
+}
+
+
+/* Course Section Styling */
+.course-section {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 2rem;
+    border-radius: 15px;
+    margin-top: 2rem;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+    transition: transform 0.3s ease;
+  }
+  
+.course-section:hover {
+    transform: scale(1.02);
+}
+  
+.course-section h2 {
+    font-size: 2.2rem;
+    color: #ffd700;
+    margin-bottom: 1rem;
+}
+  
+.course-details p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #eee;
+}
+  
+.course-details ul {
+    list-style-type: none;
+    margin-bottom: 1.5rem;
+    padding: 0;
+    color: #ffd700;
+}
+
+.course-details ul li {
+    margin-bottom: 10px;
+}
+  
+.course-details ul li::before {
+    content: "✔ ";
+    color: #ffd700;
+    font-weight: bold;
+}
+  
+.course-price {
+    font-size: 1.5rem;
+    color: #ffd700;
+    margin-top: 1rem;
+}
+  
+
+/* Buy Now Button */
+.buy-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: #ffd700;
+    color: #333;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 1rem;
+}
+  
+.buy-btn:hover {
+    background: #333;
+    color: #ffd700;
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
+}  
+
+
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+  
+footer p {
+    color: #ffd700;
+    font-size: 1rem;
+}
