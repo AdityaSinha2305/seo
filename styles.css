@@ -101,6 +101,11 @@ header p {
     backdrop-filter: blur(5px);
     animation: fadeIn 1.5s ease;
 }
+
+.content-section p{
+    text-align: justify;
+    line-height: 28px;
+}
   
 @keyframes fadeIn {
     0% { opacity: 0; transform: translateY(20px); }
@@ -120,6 +125,7 @@ h2 {
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
+    margin-top: 2rem;
 }
   
 .skills-list div {
@@ -146,6 +152,7 @@ h2 {
     padding: 1rem;
     border-left: 4px solid #ffd700;
     transition: transform 0.3s ease;
+    margin: 1.5rem 1rem;
 }
   
 .case:hover {
@@ -247,7 +254,7 @@ h2 {
 }
   
 .course-price {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     color: #ffd700;
     margin-top: 1rem;
 }
@@ -256,7 +263,7 @@ h2 {
 /* Buy Now Button */
 .buy-btn {
     display: inline-block;
-    padding: 0.75rem 1.5rem;
+    padding: 0.75rem 1rem;
     background: #ffd700;
     color: #333;
     border-radius: 5px;
@@ -271,6 +278,65 @@ h2 {
     color: #ffd700;
     box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
 }  
+
+
+/* ribbon */
+
+/* .ribbon {
+    width: 100px;
+    font-size: 12px;
+    font-weight: bolder;
+    padding: 4px;
+    position: absolute;
+    left: -10px;
+    top: 26px;
+    text-align: center;
+    border-radius: 25px;
+    transform: rotate(322deg);
+    background-color: #de2612;
+    color: white;
+} */
+
+.ribbon {
+    width: 100px;
+    font-size: 12px;
+    font-weight: bolder;
+    padding: 4px;
+    position: absolute;
+    left: -5px;
+    top: 26px;
+    text-align: center;
+    border-radius: 25px;
+    transform: rotate(322deg);
+    background: linear-gradient(145deg, #de2612, #a32010);
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    border: 1px solid #a32010;
+}
+
+/* Optional: Add pseudo-elements to create "tails" on the ribbon */
+.ribbon::before, .ribbon::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 10px;
+    background-color: #a32010;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.ribbon::before {
+    left: -15px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+
+.ribbon::after {
+    right: -15px;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+
 
 
 
